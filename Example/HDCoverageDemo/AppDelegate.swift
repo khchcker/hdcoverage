@@ -11,7 +11,15 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        HDCoverageTools.shared.registerCoverage(moduleName: "HDCoverage")
+        let infoDictionary =  Bundle.main.infoDictionary!
+        let appDisplayName = infoDictionary[ "CFBundleDisplayName" ]  //程序名称
+        let majorVersion = infoDictionary[ "CFBundleShortVersionString" ] //主程序版本号
+        let timezone = TimeZone.init(identifier: "Asia/Beijing")
+        let formatter = DateFormatter()
+        formatter.timeZone = timezone
+        formatter.dateFormat = "MMddHHmmss"
+        let name = "\(String(describing: appDisplayName))" + "_ios_" + "\(majorVersion!)".replacingOccurrences(of: ".", with: "_") + "_v" + formatter.string(from: Date.init())
+        HDCoverageTools.shared.registerCoverage(moduleName: name)
         return true
     }
 

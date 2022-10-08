@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5E241D6822E308FF4638205F /* Pods_HDCoverageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C05689C74B466C426BE3A9F6 /* Pods_HDCoverageDemo.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		CE8FF51128E2E68C006BD2D2 /* FileUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8FF51028E2E68C006BD2D2 /* FileUpload.swift */; };
+		CEA2F55C28E1BD4600F24C2C /* HDCoverageSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B92A6D27C7749A0090FAF7 /* HDCoverageSFramework.framework */; };
+		CEA2F55D28E1BD4600F24C2C /* HDCoverageSFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9B92A6D27C7749A0090FAF7 /* HDCoverageSFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D9006153272D373800F7B46D /* HDSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9006151272D373800F7B46D /* HDSwift.swift */; };
 		D9006154272D373800F7B46D /* HDOC.m in Sources */ = {isa = PBXBuildFile; fileRef = D9006152272D373800F7B46D /* HDOC.m */; };
 		D9006159272D373E00F7B46D /* HDCoverageTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9006158272D373E00F7B46D /* HDCoverageTools.swift */; };
@@ -21,7 +24,6 @@
 		D90061A7272D3A4900F7B46D /* HDOCFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = D90061A3272D3A4900F7B46D /* HDOCFramework.m */; };
 		D90061A8272D3A4900F7B46D /* HDSwiftFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90061A4272D3A4900F7B46D /* HDSwiftFramework.swift */; };
 		D90067A127311B3500F7B46D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F0670327253A3400E77D7A /* Assets.xcassets */; };
-		D9B92A6E27C7749A0090FAF7 /* HDCoverageSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B92A6D27C7749A0090FAF7 /* HDCoverageSFramework.framework */; };
 		D9C467D62853294500E75ABB /* UIImageView+JX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C466672853294400E75ABB /* UIImageView+JX.swift */; };
 		D9C467DD2853294500E75ABB /* UIButton+JX.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C466722853294400E75ABB /* UIButton+JX.swift */; };
 		D9C467E72853294500E75ABB /* UIButton+PGWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C466882853294400E75ABB /* UIButton+PGWeb.m */; };
@@ -256,6 +258,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D9006197272D3A3800F7B46D /* HDCoverageFramework.framework in Embed Frameworks */,
+				CEA2F55D28E1BD4600F24C2C /* HDCoverageSFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +275,7 @@
 		9A16F80C92F9F2C11D6AB4F7 /* Pods-HDCoverageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDCoverageDemo.release.xcconfig"; path = "Target Support Files/Pods-HDCoverageDemo/Pods-HDCoverageDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C042F22888F87C062F62C79F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C05689C74B466C426BE3A9F6 /* Pods_HDCoverageDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDCoverageDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8FF51028E2E68C006BD2D2 /* FileUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUpload.swift; sourceTree = "<group>"; };
 		D9006150272D373800F7B46D /* HDOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDOC.h; sourceTree = "<group>"; };
 		D9006151272D373800F7B46D /* HDSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HDSwift.swift; sourceTree = "<group>"; };
 		D9006152272D373800F7B46D /* HDOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDOC.m; sourceTree = "<group>"; };
@@ -640,8 +644,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9006196272D3A3800F7B46D /* HDCoverageFramework.framework in Frameworks */,
-				D9B92A6E27C7749A0090FAF7 /* HDCoverageSFramework.framework in Frameworks */,
 				5E241D6822E308FF4638205F /* Pods_HDCoverageDemo.framework in Frameworks */,
+				CEA2F55C28E1BD4600F24C2C /* HDCoverageSFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,7 +669,6 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				D9006182272D3A3800F7B46D /* HDCoverageFramework */,
 				D900618F272D3A3800F7B46D /* HDCoverageFrameworkTests */,
-				607FACD11AFB9204008FA782 /* Products */,
 				4B2741E9BBC3784CD7A4CEFF /* Pods */,
 				EAD93ACEEED80BB9E51CB6D1 /* Frameworks */,
 			);
@@ -680,6 +683,7 @@
 				D9006189272D3A3800F7B46D /* HDCoverageFrameworkTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
@@ -724,6 +728,7 @@
 			children = (
 				D900615E272D37C100F7B46D /* InstrProfiling.h */,
 				D9006158272D373E00F7B46D /* HDCoverageTools.swift */,
+				CE8FF51028E2E68C006BD2D2 /* FileUpload.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -731,6 +736,7 @@
 		D9006182272D3A3800F7B46D /* HDCoverageFramework */ = {
 			isa = PBXGroup;
 			children = (
+				607FACD11AFB9204008FA782 /* Products */,
 				D9006183272D3A3800F7B46D /* HDCoverageFramework.h */,
 				D90061A2272D3A4900F7B46D /* HDOCFramework.h */,
 				D90061A3272D3A4900F7B46D /* HDOCFramework.m */,
@@ -1357,6 +1363,7 @@
 					};
 					D9006180272D3A3800F7B46D = {
 						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = 963G6GHKFH;
 						LastSwiftMigration = 1240;
 						ProvisioningStyle = Automatic;
 					};
@@ -1367,6 +1374,7 @@
 					};
 					D9F066F727253A3100E77D7A = {
 						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = 963G6GHKFH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1605,6 +1613,7 @@
 				D9C468512853294600E75ABB /* picture_rescale_enc.c in Sources */,
 				D9C468612853294600E75ABB /* vp8l_dec.c in Sources */,
 				D9C467FE2853294600E75ABB /* SDWebImageCompat.m in Sources */,
+				CE8FF51128E2E68C006BD2D2 /* FileUpload.swift in Sources */,
 				D9C4684F2853294600E75ABB /* picture_enc.c in Sources */,
 				D9C467F32853294500E75ABB /* SDImageAWebPCoder.m in Sources */,
 				D9C4686C2853294600E75ABB /* upsampling_sse41.c in Sources */,
@@ -1914,10 +1923,12 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 963G6GHKFH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1935,7 +1946,7 @@
 				);
 				OTHER_LDFLAGS = "-fprofile-instr-generate";
 				OTHER_SWIFT_FLAGS = "-profile-generate -profile-coverage-mapping";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harry.toolbardemo.HDCoverageFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdcoverage.test;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1959,9 +1970,11 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 963G6GHKFH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1978,7 +1991,7 @@
 				);
 				OTHER_LDFLAGS = "-fprofile-instr-generate";
 				OTHER_SWIFT_FLAGS = "-profile-generate -profile-coverage-mapping";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harry.toolbardemo.HDCoverageFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdcoverage.test;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -2049,6 +2062,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2060,6 +2074,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 963G6GHKFH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDCoverageDemo/HDCoverageSFramework",
@@ -2084,13 +2099,15 @@
 					"-fprofile-instr-generate",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -profile-generate -profile-coverage-mapping";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harry.toolbardemo.HDCoverageDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdcoverage.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "HDCoverageDemo/HDCoverageDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -2101,6 +2118,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2110,9 +2128,9 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = KC6BPGQZW4;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 963G6GHKFH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/HDCoverageDemo/HDCoverageSFramework",
@@ -2138,13 +2156,15 @@
 					"-fprofile-instr-generate",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -profile-generate -profile-coverage-mapping";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ataraxia.zither;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ataraxia.zither1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = zitherAdhoc;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "HDCoverageDemo/HDCoverageDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
